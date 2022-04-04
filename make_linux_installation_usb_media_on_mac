@@ -1,0 +1,5 @@
+
+ hdiutil convert -format UDRW -o ~/linux.dmg /tmp/linux.iso
+ diskutil list
+ diskutil umountDisk /dev/disk1
+ sudo dd if=linux.dmg of=/dev/rdisk1 bs=1m
